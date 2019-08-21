@@ -1,10 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import 'antd/dist/antd.css';
 import Calendar from './components/calendar'
 import Progress from './components/progress'
 import Tasks from './components/tasks'
+
+const exampleTasks = [
+]
 
 class App extends React.Component {
 
@@ -43,10 +45,5 @@ class App extends React.Component {
 }
 
 export default App;
-
-
-
-const exampleTasks = [
-]
 
 
