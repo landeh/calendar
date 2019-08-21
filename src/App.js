@@ -12,7 +12,6 @@ class App extends React.Component {
 
   state = {
     tasks: exampleTasks,
-    selectedPage: 'home'
   }
 
   onCheck = (e, item) => {

@@ -6,12 +6,11 @@ function Prog(props) {
     var totalTasks = tasks.length
     var completedTasks = tasks.filter(t=>{return t.completed}).length
     var uncompletedTasks = totalTasks - completedTasks
-    var percent = totalTasks/completedTasks*100
+    var percent = uncompletedTasks/totalTasks*100
 
    return(
     <div>
-    <Progress percent={percent}  />
-    <Progress percent={uncompletedTasks * 100} />
+    <Progress percent={percent} showInfo = {true}  />
     </div>    
    )
 }
