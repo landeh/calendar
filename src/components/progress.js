@@ -9,7 +9,8 @@ function Prog(props) {
     var percent = uncompletedTasks/totalTasks*100
 
    return(
-    <div>
+    <div style = {{ padding: '40px'}}>
+    <h3> Completed Tasks</h3>
     <Progress percent={percent} showInfo = {true}  />
     </div>    
    )

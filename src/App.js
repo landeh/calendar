@@ -7,7 +7,6 @@ import Tasks from './components/tasks'
 
 const exampleTasks = [
 ]
-
 class App extends React.Component {
 
   state = {
@@ -33,11 +32,11 @@ class App extends React.Component {
       <div className="App">
 
         <Calendar dateSelected={(e) => this.setState({ selectedDate: e.unix() })} />
-        {!selectedDate && <Progress tasks={tasks} />}
-        {selectedDate && <Tasks data={tasks.filter(t => t.date === selectedDate)}
+        <Progress tasks={tasks} />
+        <Tasks data={tasks.filter(t => t.date === selectedDate)}
           selectedDate={selectedDate} onCheck={this.onCheck} addTask={this.addTask}
           back={() => this.setState({ selectedDate: null })}
-        />}
+        />
       </div>
     );
   }

@@ -12,6 +12,7 @@ class Tasks extends React.Component {
     render() {
         var { onCheck, data, selectedDate, back } = this.props
         var { edit, text } = this.state
+
         return (
             <div>
                 <h3 style={{ margin: '16px 0' }}>Tasks for {moment(selectedDate * 1000).format('ll')}</h3>
